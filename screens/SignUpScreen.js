@@ -1,5 +1,6 @@
 import {
   Image,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -13,7 +14,7 @@ import { ArrowLeftIcon } from "react-native-heroicons/solid";
 
 const SignUpScreen = ({ navigation }) => {
   return (
-    <View
+    <ScrollView
       className="flex-1 bg-white"
       style={{ backgroundColor: storeColors.redHeart }}
     >
@@ -84,17 +85,17 @@ const SignUpScreen = ({ navigation }) => {
               />
             </TouchableOpacity>
           </View>
-          <View className="flex-row justify-center">
+          <View className="flex-row justify-center pb-5">
             <Text className="text-gray-700 font-semibold">
               Already have account?
             </Text>
             <TouchableOpacity onPress={() => navigation.navigate("Login")}>
-              <Text className="font-semibold text-yellow-500">Login</Text>
+              <Text className="font-semibold text-yellow-500"> Login</Text>
             </TouchableOpacity>
           </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 

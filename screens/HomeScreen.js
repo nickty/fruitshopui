@@ -8,14 +8,19 @@ import {
 import { categories, featuredFruits } from "../constants";
 import FruitCard from "../components/FruitCard";
 import FruitCardSales from "../components/FruitCardSales";
+import { useNavigation } from "@react-navigation/native";
 
 const HomeScreen = () => {
   const [activeCategory, setActiveCategory] = useState("Orange");
+  const navigation = useNavigation();
   return (
     <SafeAreaView className="flex-1 bg-orange-50">
       <View className="mx-5 flex-row justify-between items-center">
         <Bars3CenterLeftIcon size={30} color="black" />
-        <Pressable className="p-2 rounded-xl bg-orange-100">
+        <Pressable
+          className="p-2 rounded-xl bg-orange-100"
+          onPress={() => navigation.navigate("Cart")}
+        >
           <ShoppingCartIcon size="25" color="orange" />
         </Pressable>
       </View>

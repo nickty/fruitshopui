@@ -17,7 +17,7 @@ export const featuredFruits = [
     color: (opacity) => `rgba(251, 216, 146, ${opacity})`,
   },
   {
-    name: "Australian Orange",
+    name: "Flesh Nectari",
     price: "12.32",
     stars: 4,
     desc: "Sweet and juicy",
@@ -26,7 +26,7 @@ export const featuredFruits = [
     color: (opacity) => `rgba(251, 216, 146, ${opacity})`,
   },
   {
-    name: "Australian Orange",
+    name: "Black Grapes",
     price: "12.32",
     stars: 4,
     desc: "Sweet and juicy",

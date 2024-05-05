@@ -6223,7 +6223,7 @@ react-native-screens@~3.29.0:
 
 react-native-star-rating@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.npmjs.org/react-native-star-rating/-/react-native-star-rating-1.1.0.tgz"
+  resolved "https://registry.npmjs.org/react-native-star-rating/-/react-native-star-rating-1.1.0.tgz#57fcd023c63e947427c4dbbd1c8f4cc49e5c48ce"
   integrity sha512-ocOYx+BKUvfruvXm45MBbQZtpkVO3PQieBDepB0FaLuxE3vUtDTPzHqXuBes3iCM5oRi5umrnmMUMsM0mEq5ZA==
   dependencies:
     prop-types "^15.5.10"

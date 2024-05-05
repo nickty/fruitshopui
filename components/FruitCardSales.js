@@ -1,10 +1,18 @@
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
 const FruitCardSales = ({ fruit }) => {
+  const navigation = useNavigation();
+
   return (
     <View className="mr-6">
-      <Pressable className="flex-row justify-center -mb-9 shadow-lg z-20">
+      <Pressable
+        onPress={() =>
+          navigation.navigate("Product", { ...fruit, color: fruit.color[1] })
+        }
+        className="flex-row justify-center -mb-9 shadow-lg z-20"
+      >
         <Image
           source={fruit.image}
           style={{
